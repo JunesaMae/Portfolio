@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Junesa Mae Leones — Global Trade Compliance Expert</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0D2137;
+    --navy-mid: #163350;
+    --blue: #1D5F8A;
+    --blue-light: #2E86AB;
+    --gold: #C8973A;
+    --gold-light: #E6B85C;
+    --cream: #F7F3EE;
+    --white: #FFFFFF;
+    --gray-light: #EBF3FA;
+    --gray-mid: #8BA0B2;
+    --text: #1A2A38;
+    --text-light: #4A6070;
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'DM Sans', sans-serif;
+    --font-mono: 'DM Mono', monospace;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--cream);
+    overflow-x: hidden;
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(13, 33, 55, 0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(200,151,58,0.2);
+    padding: 0 2rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-brand {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--white);
+    letter-spacing: 0.05em;
+  }
+  .nav-brand span { color: var(--gold); }
+  .nav-links {
+    display: flex;
+    gap: 1.8rem;
+    list-style: none;
+  }
+  .nav-links a {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gray-mid);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+
+  /* ─── HERO ─── */
+  #home {
+    min-height: 100vh;
+    background: var(--navy);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8rem 2rem 5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(45,134,171,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(45,134,171,0.06) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .hero-glow {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 400px;
+    background: radial-gradient(ellipse at center, rgba(45,134,171,0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: rgba(200,151,58,0.12);
+    border: 1px solid rgba(200,151,58,0.3);
+    color: var(--gold-light);
+    padding: 0.4rem 1.2rem;
+    border-radius: 100px;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    position: relative;
+    animation: fadeDown 0.8s ease both;
+  }
+  .hero-tag::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--gold);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
+
+  .hero-name {
+    font-family: var(--font-display);
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-bottom: 0.4rem;
+    position: relative;
+    animation: fadeUp 0.9s ease 0.1s both;
+  }
+  .hero-name em {
+    font-style: italic;
+    color: var(--gold);
+  }
+  .hero-title {
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    animation: fadeUp 0.9s ease 0.2s both;
+  }
+  .hero-tagline {
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+    font-style: italic;
+    color: rgba(255,255,255,0.75);
+    max-width: 680px;
+    margin: 0 auto 3rem;
+    animation: fadeUp 0.9s ease 0.3s both;
+  }
+  .hero-stats {
+    display: flex;
+    gap: 0;
+    border: 1px solid rgba(45,134,171,0.3);
+    border-radius: 12px;
+    overflow: hidden;
+    animation: fadeUp 0.9s ease 0.4s both;
+    position: relative;
+  }
+  .hero-stat {
+    padding: 1.4rem 2.4rem;
+    text-align: center;
+    border-right: 1px solid rgba(45,134,171,0.3);
+  }
+  .hero-stat:last-child { border-right: none; }
+  .hero-stat-val {
+    font-family: var(--font-display);
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+    display: block;
+  }
+  .hero-stat-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    display: block;
+    margin-top: 0.3rem;
+  }
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    animation: fadeUp 0.9s ease 0.5s both;
+  }
+  .btn-primary {
+    background: var(--gold);
+    color: var(--navy);
+    padding: 0.85rem 2.2rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.25s;
+    border: 2px solid var(--gold);
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200,151,58,0.35); }
+  .btn-ghost {
+    background: transparent;
+    color: var(--white);
+    padding: 0.85rem 2.2rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid rgba(255,255,255,0.2);
+    transition: all 0.25s;
+  }
+  .btn-ghost:hover { border-color: var(--blue-light); color: var(--blue-light); transform: translateY(-2px); }
+
+  /* ─── SECTION WRAPPER ─── */
+  section { padding: 6rem 2rem; }
+  .container { max-width: 1100px; margin: 0 auto; }
+
+  .section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.8rem;
+  }
+  .section-label::before {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 2px;
+    background: var(--gold);
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+  .section-title em { font-style: italic; color: var(--blue); }
+  .section-lead {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    max-width: 620px;
+    line-height: 1.8;
+  }
+
+  /* ─── ABOUT ─── */
+  #about { background: var(--white); }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+    margin-top: 3.5rem;
+  }
+  .about-text p {
+    color: var(--text-light);
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    line-height: 1.85;
+  }
+  .strengths-list { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.9rem; }
+  .strength-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 1.3rem;
+    background: var(--cream);
+    border-radius: 10px;
+    border-left: 3px solid var(--gold);
+  }
+  .strength-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 0.1rem; }
+  .strength-text { font-size: 0.92rem; color: var(--text); font-weight: 500; }
+
+  /* ─── WHY HIRE ME ─── */
+  #why { background: var(--navy); }
+  #why .section-title { color: var(--white); }
+  #why .section-label { color: var(--gold); }
+  .why-intro {
+    color: rgba(255,255,255,0.65);
+    font-size: 1.05rem;
+    max-width: 680px;
+    margin-top: 0.5rem;
+    line-height: 1.8;
+  }
+
+  .role-table {
+    margin-top: 3rem;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(45,134,171,0.25);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .role-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: rgba(45,134,171,0.15);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(45,134,171,0.2);
+  }
+  .role-header span {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--blue-light);
+  }
+  .role-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 1.3rem 2rem;
+    border-bottom: 1px solid rgba(45,134,171,0.1);
+    transition: background 0.2s;
+  }
+  .role-row:last-child { border-bottom: none; }
+  .role-row:hover { background: rgba(45,134,171,0.08); }
+  .role-name { font-weight: 600; color: var(--gold-light); font-size: 0.95rem; padding-right: 2rem; }
+  .role-why { color: rgba(255,255,255,0.7); font-size: 0.92rem; }
+
+  .why-bullets {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .why-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(45,134,171,0.2);
+    border-top: 3px solid var(--gold);
+    border-radius: 12px;
+    padding: 1.8rem;
+    transition: transform 0.25s, background 0.25s;
+  }
+  .why-card:hover { transform: translateY(-4px); background: rgba(45,134,171,0.08); }
+  .why-card-num {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.7rem;
+    display: block;
+  }
+  .why-card-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--white);
+    margin-bottom: 0.6rem;
+    line-height: 1.4;
+  }
+  .why-card-body { font-size: 0.88rem; color: rgba(255,255,255,0.55); line-height: 1.75; }
+
+  /* ─── EXPERTISE ─── */
+  #expertise { background: var(--cream); }
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .expertise-card {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 2rem;
+    border: 1px solid rgba(29,95,138,0.1);
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .expertise-card:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(29,95,138,0.12); }
+  .expertise-icon { font-size: 2rem; margin-bottom: 1.2rem; }
+  .expertise-card h3 { font-weight: 600; font-size: 1rem; color: var(--navy); margin-bottom: 1rem; }
+  .expertise-items { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+  .expertise-items li {
+    font-size: 0.88rem;
+    color: var(--text-light);
+    padding-left: 1.1rem;
+    position: relative;
+  }
+  .expertise-items li::before {
+    content: '◆';
+    position: absolute; left: 0;
+    font-size: 0.45rem;
+    color: var(--blue-light);
+    top: 0.35rem;
+  }
+
+  .regions-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+  .region-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 1.6rem;
+    text-align: center;
+    border: 1px solid rgba(29,95,138,0.1);
+  }
+  .region-flag { font-size: 2rem; margin-bottom: 0.6rem; display: block; }
+  .region-name { font-weight: 600; color: var(--navy); font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .region-desc { font-size: 0.78rem; color: var(--text-light); line-height: 1.55; }
+
+  /* ─── EXPERIENCE ─── */
+  #experience { background: var(--white); }
+  .experience-timeline { margin-top: 3.5rem; position: relative; }
+  .experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0; bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--gold), var(--blue-light), transparent);
+    border-radius: 2px;
+  }
+  .exp-item {
+    padding-left: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.5s ease;
+  }
+  .exp-item.visible { opacity: 1; transform: translateX(0); }
+  .exp-dot {
+    position: absolute;
+    left: -6px;
+    top: 0.4rem;
+    width: 14px; height: 14px;
+    background: var(--gold);
+    border-radius: 50%;
+    border: 3px solid var(--white);
+    box-shadow: 0 0 0 3px var(--gold);
+  }
+  .exp-header { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem; }
+  .exp-role { font-weight: 700; font-size: 1.15rem; color: var(--navy); }
+  .exp-period {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    background: var(--gray-light);
+    color: var(--blue);
+    padding: 0.25rem 0.8rem;
+    border-radius: 100px;
+    font-weight: 500;
+  }
+  .exp-company { font-size: 0.9rem; color: var(--blue); font-weight: 500; margin-bottom: 1rem; }
+  .exp-achievements { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+  .exp-achievements li {
+    font-size: 0.92rem;
+    color: var(--text-light);
+    padding-left: 1.3rem;
+    position: relative;
+    line-height: 1.7;
+  }
+  .exp-achievements li::before {
+    content: '▸';
+    position: absolute; left: 0;
+    color: var(--blue-light);
+    font-size: 0.8rem;
+    top: 0.25rem;
+  }
+
+  /* ─── CASE STUDIES ─── */
+  #cases { background: var(--cream); }
+  .cases-grid { margin-top: 3.5rem; display: flex; flex-direction: column; gap: 2.5rem; }
+  .case-card {
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(29,95,138,0.1);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+    transition: box-shadow 0.3s;
+  }
+  .case-card:hover { box-shadow: 0 12px 48px rgba(29,95,138,0.12); }
+  .case-header {
+    background: var(--navy);
+    padding: 2rem 2.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .case-num {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .case-title { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--white); line-height: 1.25; }
+  .case-subtitle { font-size: 0.82rem; color: rgba(255,255,255,0.45); margin-top: 0.4rem; }
+  .case-metrics-inline {
+    display: flex;
+    gap: 1rem;
+    flex-shrink: 0;
+  }
+  .case-metric {
+    text-align: center;
+    background: rgba(200,151,58,0.12);
+    border: 1px solid rgba(200,151,58,0.25);
+    border-radius: 10px;
+    padding: 0.8rem 1.2rem;
+    min-width: 90px;
+  }
+  .case-metric-val { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--gold); display: block; line-height: 1; }
+  .case-metric-label { font-size: 0.62rem; color: rgba(255,255,255,0.45); letter-spacing: 0.08em; display: block; margin-top: 0.3rem; text-transform: uppercase; }
+  .case-body { padding: 2.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+  .case-section-title {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 0.75rem;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .case-section-title::before { content: ''; width: 16px; height: 2px; background: var(--blue-light); }
+  .case-text { font-size: 0.9rem; color: var(--text-light); line-height: 1.8; }
+  .case-actions { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; }
+  .case-actions li { font-size: 0.88rem; color: var(--text-light); padding-left: 1.2rem; position: relative; line-height: 1.65; }
+  .case-actions li::before { content: '✦'; position: absolute; left: 0; color: var(--gold); font-size: 0.55rem; top: 0.4rem; }
+  .case-tools { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .tool-tag {
+    background: var(--gray-light);
+    color: var(--blue);
+    padding: 0.3rem 0.8rem;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border: 1px solid rgba(29,95,138,0.15);
+  }
+  .case-full { grid-column: 1 / -1; }
+
+  /* ─── TOOLS ─── */
+  #tools { background: var(--white); }
+  .tools-grid { margin-top: 3rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .tool-row {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.2rem 1.5rem;
+    background: var(--cream);
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: all 0.25s;
+  }
+  .tool-row:hover { border-color: rgba(29,95,138,0.2); background: var(--white); box-shadow: 0 4px 16px rgba(29,95,138,0.08); }
+  .tool-icon { font-size: 1.5rem; flex-shrink: 0; }
+  .tool-info { flex: 1; }
+  .tool-name { font-weight: 600; font-size: 0.95rem; color: var(--navy); }
+  .tool-desc { font-size: 0.8rem; color: var(--text-light); margin-top: 0.2rem; line-height: 1.5; }
+  .tool-cert {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    background: rgba(200,151,58,0.12);
+    color: var(--gold);
+    padding: 0.2rem 0.6rem;
+    border-radius: 100px;
+    border: 1px solid rgba(200,151,58,0.25);
+    white-space: nowrap;
+  }
+
+  /* ─── CERTIFICATIONS ─── */
+  #certifications { background: var(--cream); }
+  .certs-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; margin-top: 3rem; }
+  .cert-card {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 2rem;
+    border: 1px solid rgba(29,95,138,0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.25s;
+  }
+  .cert-card:hover { transform: translateY(-5px); }
+  .cert-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--gold), var(--blue-light));
+  }
+  .cert-icon { font-size: 2.5rem; margin-bottom: 1rem; display: block; }
+  .cert-title { font-weight: 700; font-size: 1rem; color: var(--navy); margin-bottom: 0.4rem; line-height: 1.35; }
+  .cert-org { font-size: 0.83rem; color: var(--text-light); margin-bottom: 0.8rem; }
+  .cert-year {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    background: var(--navy);
+    color: var(--gold);
+    padding: 0.25rem 0.8rem;
+    border-radius: 100px;
+  }
+
+  /* ─── SEO / KEYWORDS ─── */
+  #seo { background: var(--navy); }
+  #seo .section-title { color: var(--white); }
+  .keywords-section { margin-top: 3rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .keywords-group h4 { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue-light); margin-bottom: 1.2rem; }
+  .keywords-cloud { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .keyword-pill {
+    background: rgba(255,255,255,0.06);
+    color: rgba(255,255,255,0.7);
+    border: 1px solid rgba(45,134,171,0.25);
+    padding: 0.4rem 1rem;
+    border-radius: 100px;
+    font-size: 0.82rem;
+    cursor: default;
+    transition: all 0.2s;
+  }
+  .keyword-pill:hover { background: rgba(200,151,58,0.15); border-color: var(--gold); color: var(--gold-light); }
+  .keyword-pill.primary { background: rgba(200,151,58,0.1); border-color: rgba(200,151,58,0.3); color: var(--gold-light); }
+
+  /* ─── DESIGN GUIDE ─── */
+  #design { background: var(--white); }
+  .palette-row { display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap; }
+  .swatch {
+    flex: 1; min-width: 120px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.07);
+  }
+  .swatch-color { height: 70px; }
+  .swatch-info { padding: 0.7rem; background: var(--cream); }
+  .swatch-hex { font-family: var(--font-mono); font-size: 0.75rem; font-weight: 500; color: var(--navy); display: block; }
+  .swatch-name { font-size: 0.72rem; color: var(--text-light); display: block; }
+
+  .visuals-list { margin-top: 2rem; display: flex; flex-direction: column; gap: 0.9rem; }
+  .visual-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1rem 1.2rem;
+    background: var(--cream);
+    border-radius: 10px;
+  }
+  .visual-icon { font-size: 1.3rem; flex-shrink: 0; }
+  .visual-text { font-size: 0.9rem; color: var(--text-light); }
+  .visual-text strong { color: var(--navy); }
+
+  /* ─── CONTACT ─── */
+  #contact {
+    background: var(--navy);
+    text-align: center;
+    padding: 7rem 2rem;
+  }
+  #contact .section-title { color: var(--white); font-size: clamp(2.2rem,4vw,3.5rem); }
+  #contact .section-label { justify-content: center; }
+  .contact-sub {
+    color: rgba(255,255,255,0.55);
+    font-size: 1.05rem;
+    max-width: 560px;
+    margin: 1rem auto 3rem;
+    line-height: 1.8;
+  }
+  .contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+  .contact-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(45,134,171,0.25);
+    border-radius: 12px;
+    padding: 1.6rem 2rem;
+    min-width: 180px;
+    text-align: center;
+    transition: all 0.25s;
+  }
+  .contact-card:hover { background: rgba(45,134,171,0.1); border-color: var(--blue-light); transform: translateY(-3px); }
+  .contact-card-icon { font-size: 1.6rem; margin-bottom: 0.5rem; display: block; }
+  .contact-card-label { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); font-weight: 600; display: block; margin-bottom: 0.3rem; }
+  .contact-card-value { font-size: 0.9rem; color: rgba(255,255,255,0.7); }
+  .availability {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: rgba(200,151,58,0.1);
+    border: 1px solid rgba(200,151,58,0.25);
+    color: var(--gold-light);
+    padding: 0.6rem 1.5rem;
+    border-radius: 100px;
+    font-size: 0.82rem;
+  }
+  .availability::before {
+    content: '';
+    width: 7px; height: 7px;
+    background: #4ADE80;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: #060E16;
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.25);
+  }
+  footer span { color: var(--gold); }
+
+  /* ─── ANIMATIONS ─── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+  .fade-in-delay-1 { transition-delay: 0.1s; }
+  .fade-in-delay-2 { transition-delay: 0.2s; }
+  .fade-in-delay-3 { transition-delay: 0.3s; }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 900px) {
+    .about-grid, .why-bullets { grid-template-columns: 1fr; }
+    .expertise-grid { grid-template-columns: repeat(2,1fr); }
+    .case-body { grid-template-columns: 1fr; }
+    .case-metrics-inline { display: none; }
+    .tools-grid { grid-template-columns: 1fr; }
+    .keywords-section { grid-template-columns: 1fr; }
+    .certs-grid { grid-template-columns: 1fr; }
+    nav .nav-links { display: none; }
+    .regions-grid { grid-template-columns: repeat(2,1fr); }
+  }
+
+  /* Counter animation */
+  .count-up { display: inline; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">Junesa Mae <span>Leones</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#why">Why Hire Me</a></li>
+    <li><a href="#expertise">Expertise</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#cases">Case Studies</a></li>
+    <li><a href="#tools">Tools</a></li>
+    <li><a href="#certifications">Credentials</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+
+  <div class="hero-tag">Licensed Customs Broker · PRC Philippines</div>
+
+  <h1 class="hero-name">Junesa <em>Mae</em><br>Leones</h1>
+  <p class="hero-title">Global Trade Compliance Expert &nbsp;·&nbsp; Logistics Specialist &nbsp;·&nbsp; 3PL Operations</p>
+  <p class="hero-tagline">"Turning Border Complexity Into Competitive Advantage — Across Every Market."</p>
+
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="hero-stat-val"><span class="count-up" data-target="10">0</span>+</span>
+      <span class="hero-stat-label">Years Experience</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-val">99%+</span>
+      <span class="hero-stat-label">Compliance Accuracy</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-val"><span class="count-up" data-target="100">0</span>K+</span>
+      <span class="hero-stat-label">SKUs Classified</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-val">5</span>
+      <span class="hero-stat-label">Global Regions</span>
+    </div>
+  </div>
+
+  <div class="hero-cta">
+    <a href="#cases" class="btn-primary">View Case Studies</a>
+    <a href="#contact" class="btn-ghost">Get In Touch</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-label">About Me</div>
+    <h2 class="section-title">A Decade at the <em>Intersection</em><br>of Compliance & Operations</h2>
+
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <p>I am a Licensed Customs Broker (PRC Philippines) and global logistics professional with nearly a decade of end-to-end supply chain experience spanning North America, Europe, the UK, Australia, and Asia-Pacific. My career has taken me from filing customs entries at Kuehne + Nagel to coordinating freight for iconic casino mega-projects in Macau — to scaling compliance programs for Silicon Valley-backed global e-commerce platforms.</p>
+        <p>What sets me apart is the ability to see the entire trade lifecycle, anticipate bottlenecks before they occur, and build workflows that hold up under audit pressure. Whether it's classifying hundreds of thousands of SKUs, managing 3PL partners across time zones, or aligning documentation with constantly evolving customs regulations, I bring accuracy, speed, and strategic thinking to every engagement.</p>
+        <p>I'm available for remote, hybrid, or relocation roles with international employers in logistics tech, freight forwarding, 3PL, or global trade compliance.</p>
+      </div>
+      <div class="strengths-list fade-in fade-in-delay-2">
+        <div class="strength-item"><span class="strength-icon">🌐</span><span class="strength-text">Cross-border shipment coordination across 5+ global regions with direct regulatory experience</span></div>
+        <div class="strength-item"><span class="strength-icon">📋</span><span class="strength-text">HS/HTS tariff classification at enterprise scale — B2C and B2B, 100K+ SKUs</span></div>
+        <div class="strength-item"><span class="strength-icon">🏅</span><span class="strength-text">CargoWise Certified Operator with advanced Excel automation and AI-assisted tool experience</span></div>
+        <div class="strength-item"><span class="strength-icon">📊</span><span class="strength-text">Multi-client compliance management with 99%+ accuracy track record</span></div>
+        <div class="strength-item"><span class="strength-icon">🔧</span><span class="strength-text">Process improvement and workflow automation in high-volume 3PL environments</span></div>
+        <div class="strength-item"><span class="strength-icon">💻</span><span class="strength-text">High-performance remote professional — Silicon Valley standards, global time zones</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY HIRE ME -->
+<section id="why">
+  <div class="container">
+    <div class="section-label">Why Hire Me</div>
+    <h2 class="section-title" style="color:var(--white)">The <em style="color:var(--gold)">Ideal Candidate</em><br>for Your Team</h2>
+    <p class="why-intro">When you hire Junesa Mae Leones, you are bringing in a battle-tested compliance and logistics professional — not someone who needs hand-holding. A decade of real-world experience across five regions, for clients from freight forwarding boutiques to Silicon Valley e-commerce platforms.</p>
+
+    <div class="role-table fade-in" style="margin-top:3rem;">
+      <div class="role-header">
+        <span>Target Role</span>
+        <span>Why I'm the Ideal Fit</span>
+      </div>
+      <div class="role-row">
+        <div class="role-name">Logistics Coordinator</div>
+        <div class="role-why">10 years managing end-to-end freight — booking through final delivery, across carriers, 3PLs, and multiple jurisdictions. I coordinate and I own outcomes.</div>
+      </div>
+      <div class="role-row">
+        <div class="role-name">Freight & Customs Clearance Coordinator</div>
+        <div class="role-why">A licensed customs broker who has personally filed entries, managed HS classification at scale, and resolved complex clearance bottlenecks under time pressure. Professional credentials, not just experience.</div>
+      </div>
+      <div class="role-row">
+        <div class="role-name">Global Trade Operations Specialist</div>
+        <div class="role-why">Direct experience across NA, EU, UK, AU, and APAC on trade compliance, documentation, and shipment coordination. Global by design, not by accident.</div>
+      </div>
+      <div class="role-row">
+        <div class="role-name">Supply Chain Analyst</div>
+        <div class="role-why">Built KPI dashboards, identified data discrepancies, automated documentation workflows, and drove measurable improvements. I don't just report — I improve.</div>
+      </div>
+    </div>
+
+    <div class="why-bullets">
+      <div class="why-card fade-in">
+        <span class="why-card-num">01 — CREDENTIAL</span>
+        <div class="why-card-title">I Hold the License — and Know How to Use It</div>
+        <p class="why-card-body">PRC-licensed Customs Broker in the Philippines — a credential requiring rigorous national board examinations. Most logistics coordinators have work experience. I have a professional license on top of it.</p>
+      </div>
+      <div class="why-card fade-in fade-in-delay-1">
+        <span class="why-card-num">02 — SCALE</span>
+        <div class="why-card-title">I've Classified 100,000+ SKUs Without Cutting Corners</div>
+        <p class="why-card-body">Led HS code classification for hundreds of thousands of product SKUs for a top-tier global e-commerce client, maintaining 99%+ compliance accuracy across multiple markets simultaneously.</p>
+      </div>
+      <div class="why-card fade-in fade-in-delay-2">
+        <span class="why-card-num">03 — BREADTH</span>
+        <div class="why-card-title">I've Touched Every Link in the Supply Chain</div>
+        <p class="why-card-body">From customs declarant at Kuehne + Nagel to managing MGM Grand Macau shipments, to senior compliance specialist for US tech clients — I've operated at every level of the logistics ecosystem.</p>
+      </div>
+      <div class="why-card fade-in fade-in-delay-3">
+        <span class="why-card-num">04 — RELIABILITY</span>
+        <div class="why-card-title">I Solve Problems Before They Become Crises</div>
+        <p class="why-card-body">Misclassified HS code at 2 AM? Vendor missed a booking deadline? Documentation hold at the port? I have the experience to diagnose fast and act faster. The professional you call when it cannot wait.</p>
+      </div>
+      <div class="why-card fade-in">
+        <span class="why-card-num">05 — SYSTEMS THINKING</span>
+        <div class="why-card-title">I Build Systems, Not Just Complete Tasks</div>
+        <p class="why-card-body">At Expedock, I identified recurring errors and drove workflow improvements. At Upwork, I standardized HS protocols that accelerated clearance across multiple client accounts. I improve the process while I'm in it.</p>
+      </div>
+      <div class="why-card fade-in fade-in-delay-1">
+        <span class="why-card-num">06 — REMOTE-READY</span>
+        <div class="why-card-title">Silicon Valley Standards, Anywhere in the World</div>
+        <p class="why-card-body">Years operating as a high-performing remote professional for US-based firms — managing cross-time-zone communication, compliance deadlines, and documentation workflows without missing a beat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section id="expertise">
+  <div class="container">
+    <div class="section-label">Core Expertise</div>
+    <h2 class="section-title">Deep Expertise Across<br><em>Every Trade Function</em></h2>
+    <p class="section-lead">Three pillars of capability that cover the full spectrum of global logistics, trade compliance, and supply chain operations.</p>
+
+    <div class="expertise-grid">
+      <div class="expertise-card fade-in">
+        <div class="expertise-icon">⚖️</div>
+        <h3>Customs & Trade Compliance</h3>
+        <ul class="expertise-items">
+          <li>HS / HTS Tariff Classification</li>
+          <li>Import/Export Entry Filing</li>
+          <li>Customs Documentation Management</li>
+          <li>Duty Computation & Optimization</li>
+          <li>Regulatory Compliance Monitoring</li>
+          <li>B2C & B2B Clearance Processes</li>
+        </ul>
+      </div>
+      <div class="expertise-card fade-in fade-in-delay-1">
+        <div class="expertise-icon">🚢</div>
+        <h3>Freight & Logistics Operations</h3>
+        <ul class="expertise-items">
+          <li>Cross-Border Shipment Coordination</li>
+          <li>Carrier & 3PL Management</li>
+          <li>Multi-Location Cargo Tracking</li>
+          <li>Freight Invoice Verification</li>
+          <li>Delivery Schedule Management</li>
+          <li>Warehouse & Partner Coordination</li>
+        </ul>
+      </div>
+      <div class="expertise-card fade-in fade-in-delay-2">
+        <div class="expertise-icon">📊</div>
+        <h3>Data, Tools & Process</h3>
+        <ul class="expertise-items">
+          <li>KPI Monitoring & Reporting</li>
+          <li>Advanced Excel Automation</li>
+          <li>CargoWise One Operations</li>
+          <li>AI-Assisted Workflow Tools</li>
+          <li>ERP & CRM Integration</li>
+          <li>Process Improvement Initiatives</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin-top:3.5rem;font-family:var(--font-display);font-size:1.6rem;color:var(--navy);margin-bottom:1.5rem;">Regional Coverage</h3>
+    <div class="regions-grid fade-in">
+      <div class="region-card">
+        <span class="region-flag">🇺🇸</span>
+        <div class="region-name">North America</div>
+        <div class="region-desc">HTS classification, US CBP, Section 301/232 tariffs, FTZ awareness</div>
+      </div>
+      <div class="region-card">
+        <span class="region-flag">🇪🇺</span>
+        <div class="region-name">Europe & UK</div>
+        <div class="region-desc">EU customs codes, post-Brexit UK procedures, import VAT, incoterms</div>
+      </div>
+      <div class="region-card">
+        <span class="region-flag">🇦🇺</span>
+        <div class="region-name">Australia</div>
+        <div class="region-desc">ICS/Import clearance, Australian Border Force standards, AHS classification</div>
+      </div>
+      <div class="region-card">
+        <span class="region-flag">🌏</span>
+        <div class="region-name">Asia-Pacific</div>
+        <div class="region-desc">Philippines BOC (licensed), HK/Macau logistics, ASEAN trade corridors</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="section-label">Work Experience</div>
+    <h2 class="section-title">A Decade of<br><em>Proven Performance</em></h2>
+
+    <div class="experience-timeline">
+
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-header">
+          <div class="exp-role">Senior Global Compliance Specialist</div>
+          <div class="exp-period">Jul 2023 – Oct 2025</div>
+        </div>
+        <div class="exp-company">Passport Global Inc. · Palo Alto, California, USA (Remote)</div>
+        <ul class="exp-achievements">
+          <li>Managed high-volume cross-border shipment documentation for a global e-commerce distribution program, maintaining <strong>99%+ compliance accuracy</strong> across NA, EU, UK, AU, and APAC markets.</li>
+          <li>Led HS code classification initiative for a top-tier enterprise client — classifying <strong>100,000+ SKUs</strong> across multiple categories, eliminating duty misclassification risks across six international markets.</li>
+          <li>Collaborated with overseas logistics partners to resolve clearance bottlenecks, improving <strong>on-time delivery by 15–20%</strong> quarter-over-quarter.</li>
+          <li>Developed compliance documentation templates adopted team-wide, <strong>reducing turnaround time by 30%</strong>.</li>
+          <li>Served as primary compliance escalation point for complex classification disputes, protecting client operations from regulatory penalties.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-header">
+          <div class="exp-role">Freight Data Validator</div>
+          <div class="exp-period">Jan 2022 – Jul 2023</div>
+        </div>
+        <div class="exp-company">Expedock Software Inc. · San Francisco, California, USA (Remote)</div>
+        <ul class="exp-achievements">
+          <li>Validated and monitored international shipment data across high-throughput freight workflows, ensuring accuracy in documentation, cargo descriptions, and route information.</li>
+          <li>Collaborated with engineering teams on AI-powered freight management systems, contributing logistics domain expertise that improved tool accuracy.</li>
+          <li>Identified recurring documentation discrepancies and developed structured error logs, enabling operations to <strong>reduce recurring data errors by ~25%</strong>.</li>
+          <li>Contributed to SOP development for freight data validation, providing documentation adopted for new team member onboarding.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-header">
+          <div class="exp-role">Global Trade Operations Consultant</div>
+          <div class="exp-period">Oct 2018 – Jan 2022</div>
+        </div>
+        <div class="exp-company">Upwork Global Inc. · Palo Alto, California, USA (Remote)</div>
+        <ul class="exp-achievements">
+          <li>Supported a portfolio of international clients across NA, EU, and APAC in optimizing cross-border shipment processes and trade compliance workflows.</li>
+          <li>Standardized HS classification methodologies for multiple client accounts, <strong>reducing reclassification disputes by 35%</strong> and accelerating clearance by an average of 2 business days.</li>
+          <li>Coordinated end-to-end shipment timelines across multiple jurisdictions, aligning production, freight, and customs clearance milestones.</li>
+          <li>Advised clients on regulatory changes, proactively updating documentation workflows to maintain compliance with evolving requirements.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-header">
+          <div class="exp-role">Assistant Manager – Freight Operations</div>
+          <div class="exp-period">Feb 2014 – Oct 2018</div>
+        </div>
+        <div class="exp-company">TKHS Group Inc. · Pasay City, PH & Macau SAR, China</div>
+        <ul class="exp-achievements">
+          <li>Managed end-to-end freight operations for high-profile hospitality projects: <strong>MGM Grand Paradise (Macau)</strong>, City of Dreams Manila, and Solaire Resort & Casino.</li>
+          <li>Oversaw carrier, trucking, and warehouse partner network across PH and Macau SAR — zero major shipment failures on critical project milestones.</li>
+          <li>Reconciled freight invoices against SLAs, recovering billing discrepancies that <strong>saved an estimated 5–8% in annual logistics spend</strong>.</li>
+          <li>Navigated customs compliance across Philippine BOC and Macau Customs & Excise simultaneously, with zero penalty incidents.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-header">
+          <div class="exp-role">Customs Declarant</div>
+          <div class="exp-period">Jan 2013 – Feb 2014</div>
+        </div>
+        <div class="exp-company">Kuehne + Nagel Inc. · Parañaque City, Philippines</div>
+        <ul class="exp-achievements">
+          <li>Managed import clearance processes at one of the world's top logistics companies — tariff classification, duty computation, and entry lodgment with Philippine BOC.</li>
+          <li>Maintained a <strong>clean compliance record with zero penalty incidents</strong> across all managed import entries.</li>
+          <li>Coordinated delivery bookings with trucking partners, ensuring timely shipment releases and on-schedule deliveries.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section id="cases">
+  <div class="container">
+    <div class="section-label">Case Studies</div>
+    <h2 class="section-title">Expertise Into<br><em>Measurable Results</em></h2>
+    <p class="section-lead">Real challenges. Real solutions. Quantified business impact across global logistics environments.</p>
+
+    <div class="cases-grid">
+
+      <!-- CS 1 -->
+      <div class="case-card fade-in">
+        <div class="case-header">
+          <div>
+            <span class="case-num">CASE STUDY 01 · PASSPORT GLOBAL · 2023–2025</span>
+            <div class="case-title">Enterprise-Scale HS Code Classification Program</div>
+            <div class="case-subtitle">Global E-Commerce · NA · EU · UK · AU · APAC · Canada · Japan</div>
+          </div>
+          <div class="case-metrics-inline">
+            <div class="case-metric">
+              <span class="case-metric-val">100K+</span>
+              <span class="case-metric-label">SKUs Classified</span>
+            </div>
+            <div class="case-metric">
+              <span class="case-metric-val">99%+</span>
+              <span class="case-metric-label">Accuracy</span>
+            </div>
+            <div class="case-metric">
+              <span class="case-metric-val">35%</span>
+              <span class="case-metric-label">Fewer Disputes</span>
+            </div>
+          </div>
+        </div>
+        <div class="case-body">
+          <div>
+            <div class="case-section-title">The Challenge</div>
+            <p class="case-text">A top-tier global e-commerce client had a rapidly expanding product catalogue spanning hundreds of thousands of SKUs across electronics, apparel, cosmetics, and household goods. The existing classification process was inconsistent, manual, and error-prone — exposing the client to duty miscalculations, customs delays, and regulatory penalties across six international markets.</p>
+          </div>
+          <div>
+            <div class="case-section-title">Actions Taken</div>
+            <ul class="case-actions">
+              <li>Conducted a full audit of existing SKU classification records, identifying error patterns across country-specific tariff schedules</li>
+              <li>Built a classification framework using Descartes CustomsInfo and HS reference databases, creating product-type classification trees</li>
+              <li>Developed a tiered SKU triage system: batch processing for high-volume items, deep review escalation for borderline classifications</li>
+              <li>Created a master classification reference document reducing repeat lookups across the team</li>
+              <li>Maintained ongoing review cycles to update classifications for US Section 301 changes and UK Global Tariff post-Brexit</li>
+            </ul>
+          </div>
+          <div>
+            <div class="case-section-title">Tools Used</div>
+            <div class="case-tools">
+              <span class="tool-tag">Descartes CustomsInfo</span>
+              <span class="tool-tag">Advanced Excel</span>
+              <span class="tool-tag">CargoWise One</span>
+              <span class="tool-tag">Salesforce</span>
+              <span class="tool-tag">Google Workspace</span>
+            </div>
+          </div>
+          <div>
+            <div class="case-section-title">Business Impact</div>
+            <p class="case-text">The classification program eliminated duty misclassification risks across six markets, reduced reclassification disputes by ~35%, and established a scalable reference system that continues to support the client's expanding product catalogue. Compliance accuracy maintained at 99%+ throughout the engagement.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CS 2 -->
+      <div class="case-card fade-in">
+        <div class="case-header">
+          <div>
+            <span class="case-num">CASE STUDY 02 · PASSPORT GLOBAL · 2023–2025</span>
+            <div class="case-title">Clearance Bottleneck Resolution & On-Time Delivery Improvement</div>
+            <div class="case-subtitle">Multi-Region E-Commerce · Cross-Border Freight Optimization</div>
+          </div>
+          <div class="case-metrics-inline">
+            <div class="case-metric">
+              <span class="case-metric-val">15–20%</span>
+              <span class="case-metric-label">OTD Improvement</span>
+            </div>
+            <div class="case-metric">
+              <span class="case-metric-val">30%</span>
+              <span class="case-metric-label">Fewer Doc Errors</span>
+            </div>
+            <div class="case-metric">
+              <span class="case-metric-val">-2 Days</span>
+              <span class="case-metric-label">Avg Clearance</span>
+            </div>
+          </div>
+        </div>
+        <div class="case-body">
+          <div>
+            <div class="case-section-title">The Challenge</div>
+            <p class="case-text">Recurring customs clearance bottlenecks were causing delayed deliveries across multiple destination markets. Root causes included inconsistent documentation from origin partners, classification disputes at destination ports, and poor real-time visibility into in-transit shipment status — eroding client SLA performance and increasing cost-per-shipment.</p>
+          </div>
+          <div>
+            <div class="case-section-title">Actions Taken</div>
+            <ul class="case-actions">
+              <li>Implemented proactive shipment tracking protocols — monitoring at each customs checkpoint rather than waiting for exception alerts</li>
+              <li>Created a documentation checklist by origin country, eliminating the most common submission errors causing customs holds</li>
+              <li>Established direct communication channels with overseas logistics partners for real-time status updates</li>
+              <li>Developed weekly clearance performance KPI reports tracking hold rates, average clearance time, and country-level trends</li>
+              <li>Implemented pre-shipment compliance review for all high-value, high-volume lanes — catching errors before departure</li>
+            </ul>
+          </div>
+          <div>
+            <div class="case-section-title">Tools Used</div>
+            <div class="case-tools">
+              <span class="tool-tag">CargoWise One</span>
+              <span class="tool-tag">Salesforce</span>
+              <span class="tool-tag">Advanced Excel</span>
+              <span class="tool-tag">Zendesk</span>
+              <span class="tool-tag">Google Workspace</span>
+            </div>
+          </div>
+          <div>
+            <div class="case-section-title">Business Impact</div>
+            <p class="case-text">On-time delivery rates improved 15–20% quarter-over-quarter. Documentation errors fell ~30%. Average customs clearance time dropped by 2 business days. The pre-shipment review process became a standard client protocol, preventing recurrence of the bottleneck pattern.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CS 3 -->
+      <div class="case-card fade-in">
+        <div class="case-header">
+          <div>
+            <span class="case-num">CASE STUDY 03 · EXPEDOCK · 2022–2023</span>
+            <div class="case-title">Freight Data Accuracy & AI-Assisted Workflow Improvement</div>
+            <div class="case-subtitle">Freight Tech · Data Validation · AI Model Enhancement</div>
+          </div>
+          <div class="case-metrics-inline">
+            <div class="case-metric">
+              <span class="case-metric-val">~25%</span>
+              <span class="case-metric-label">Error Reduction</span>
+            </div>
+            <div class="case-metric">
+              <span class="case-metric-val">SOPs</span>
+              <span class="case-metric-label">Developed & Deployed</span>
+            </div>
+          </div>
+        </div>
+        <div class="case-body">
+          <div>
+            <div class="case-section-title">The Challenge</div>
+            <p class="case-text">Expedock's AI-powered freight data extraction engine produced recurring validation errors in international shipment documentation — including Bill of Lading descriptions, cargo weights, port codes, and HS data. These errors, if uncorrected, would propagate into downstream customs filings and carrier systems, creating compliance risk at scale.</p>
+          </div>
+          <div>
+            <div class="case-section-title">Actions Taken</div>
+            <ul class="case-actions">
+              <li>Conducted deep-dive analysis on recurring error types, cataloguing by document type, carrier, and trade lane</li>
+              <li>Collaborated with engineering teams to translate real-world document norms into model feedback that improved AI extraction accuracy</li>
+              <li>Built a structured discrepancy log (Excel) tracking error frequency and enabling prioritization of high-impact fixes</li>
+              <li>Contributed to internal validation SOPs providing structured QA frameworks for new team members</li>
+              <li>Provided SME expertise on BoLs, AWBs, commercial invoices, and packing lists to support model training cycles</li>
+            </ul>
+          </div>
+          <div>
+            <div class="case-section-title">Tools Used</div>
+            <div class="case-tools">
+              <span class="tool-tag">Advanced Excel</span>
+              <span class="tool-tag">AI Freight Management System</span>
+              <span class="tool-tag">Google Workspace</span>
+              <span class="tool-tag">Notion</span>
+            </div>
+          </div>
+          <div>
+            <div class="case-section-title">Business Impact</div>
+            <p class="case-text">Recurring data errors reduced by approximately 25%. Scalable validation SOPs developed and adopted for team onboarding. AI extraction accuracy improved through structured domain-expert feedback loop — a direct contribution to Expedock's core product quality.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CS 4 -->
+      <div class="case-card fade-in">
+        <div class="case-header">
+          <div>
+            <span class="case-num">CASE STUDY 04 · TKHS GROUP · 2014–2018</span>
+            <div class="case-title">High-Stakes Freight Coordination for Casino & Hospitality Mega-Projects</div>
+            <div class="case-subtitle">Philippines · Macau SAR · MGM Grand · City of Dreams · Solaire Resort</div>
+          </div>
+          <div class="case-metrics-inline">
+            <div class="case-metric">
+              <span class="case-metric-val">3</span>
+              <span class="case-metric-label">Mega-Projects</span>
+            </div>
+            <div class="case-metric">
+              <span class="case-metric-val">5–8%</span>
+              <span class="case-metric-label">Cost Savings</span>
+            </div>
+            <div class="case-metric">
+              <span class="case-metric-val">Zero</span>
+              <span class="case-metric-label">Customs Penalties</span>
+            </div>
+          </div>
+        </div>
+        <div class="case-body">
+          <div>
+            <div class="case-section-title">The Challenge</div>
+            <p class="case-text">Multi-million-dollar hospitality development projects required coordinating importation and delivery of high-value FF&E, construction materials, and specialized supplies across two jurisdictions with different customs regimes, tight project timelines, and zero tolerance for supply chain failures.</p>
+          </div>
+          <div>
+            <div class="case-section-title">Actions Taken</div>
+            <ul class="case-actions">
+              <li>Managed full freight lifecycle: booking, documentation, customs clearance, carrier management, and delivery scheduling for each project</li>
+              <li>Coordinated a network of international suppliers, freight forwarders, shipping lines, and warehouse operators across PH and Macau SAR</li>
+              <li>Implemented a shipment tracking and milestone-monitoring system to keep project managers informed in real time</li>
+              <li>Conducted freight invoice audits against SLAs, identifying and recovering billing overcharges</li>
+              <li>Navigated Philippine BOC and Macau Customs & Excise requirements simultaneously — two distinct regulatory environments, zero errors</li>
+            </ul>
+          </div>
+          <div>
+            <div class="case-section-title">Tools Used</div>
+            <div class="case-tools">
+              <span class="tool-tag">Freight Management System</span>
+              <span class="tool-tag">Advanced Excel</span>
+              <span class="tool-tag">PO Management Systems</span>
+              <span class="tool-tag">Carrier Portals</span>
+            </div>
+          </div>
+          <div>
+            <div class="case-section-title">Business Impact</div>
+            <p class="case-text">All three mega-project deliveries completed without major shipment failures. Freight invoice audit recovered 5–8% in annual logistics cost savings. Zero customs penalty incidents recorded across both jurisdictions throughout the 4-year engagement.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools">
+  <div class="container">
+    <div class="section-label">Tools & Systems</div>
+    <h2 class="section-title">The Technical <em>Arsenal</em><br>Behind the Results</h2>
+
+    <div class="tools-grid" style="margin-top:3rem;">
+      <div class="tool-row fade-in">
+        <span class="tool-icon">🔷</span>
+        <div class="tool-info">
+          <div class="tool-name">CargoWise One</div>
+          <div class="tool-desc">Shipment management, customs entries, 3PL operations, compliance workflows</div>
+        </div>
+        <span class="tool-cert">Certified Operator</span>
+      </div>
+      <div class="tool-row fade-in">
+        <span class="tool-icon">📦</span>
+        <div class="tool-info">
+          <div class="tool-name">Descartes CustomsInfo</div>
+          <div class="tool-desc">HS/HTS classification research, tariff schedule lookup, duty rate analysis</div>
+        </div>
+      </div>
+      <div class="tool-row fade-in">
+        <span class="tool-icon">📊</span>
+        <div class="tool-info">
+          <div class="tool-name">Advanced Microsoft Excel</div>
+          <div class="tool-desc">Advanced formulas, pivot tables, automation macros, KPI dashboards, data reconciliation</div>
+        </div>
+        <span class="tool-cert">Advanced</span>
+      </div>
+      <div class="tool-row fade-in">
+        <span class="tool-icon">🏢</span>
+        <div class="tool-info">
+          <div class="tool-name">NetSuite ERP</div>
+          <div class="tool-desc">Order tracking, inventory management, PO processing, cross-functional data reporting</div>
+        </div>
+      </div>
+      <div class="tool-row fade-in">
+        <span class="tool-icon">☁️</span>
+        <div class="tool-info">
+          <div class="tool-name">Salesforce</div>
+          <div class="tool-desc">Client communication tracking, case management, compliance escalation workflows</div>
+        </div>
+      </div>
+      <div class="tool-row fade-in">
+        <span class="tool-icon">🛒</span>
+        <div class="tool-info">
+          <div class="tool-name">Shopify Partners</div>
+          <div class="tool-desc">E-commerce product catalogue management, order monitoring, B2C logistics coordination</div>
+        </div>
+      </div>
+      <div class="tool-row fade-in">
+        <span class="tool-icon">🎫</span>
+        <div class="tool-info">
+          <div class="tool-name">Zendesk</div>
+          <div class="tool-desc">Customer/partner support ticketing, SLA monitoring, escalation management</div>
+        </div>
+      </div>
+      <div class="tool-row fade-in">
+        <span class="tool-icon">📝</span>
+        <div class="tool-info">
+          <div class="tool-name">Notion</div>
+          <div class="tool-desc">SOP documentation, project tracking, team knowledge base management</div>
+        </div>
+      </div>
+      <div class="tool-row fade-in">
+        <span class="tool-icon">🤖</span>
+        <div class="tool-info">
+          <div class="tool-name">AI-Assisted Workflow Tools</div>
+          <div class="tool-desc">AI-powered freight data extraction, automated validation tools, process optimization</div>
+        </div>
+      </div>
+      <div class="tool-row fade-in">
+        <span class="tool-icon">🌐</span>
+        <div class="tool-info">
+          <div class="tool-name">Google Workspace</div>
+          <div class="tool-desc">Collaborative documentation, reporting, communication across global teams</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="container">
+    <div class="section-label">Credentials</div>
+    <h2 class="section-title">Certified. <em>Licensed.</em><br>Qualified.</h2>
+
+    <div class="certs-grid">
+      <div class="cert-card fade-in">
+        <span class="cert-icon">🏅</span>
+        <div class="cert-title">Licensed Customs Broker</div>
+        <div class="cert-org">Professional Regulation Commission (PRC), Philippines</div>
+        <span class="cert-year">2012 — Active</span>
+      </div>
+      <div class="cert-card fade-in fade-in-delay-1">
+        <span class="cert-icon">🔷</span>
+        <div class="cert-title">CargoWise Certified Operator</div>
+        <div class="cert-org">WiseTech Global — CargoWise One Platform</div>
+        <span class="cert-year">2021</span>
+      </div>
+      <div class="cert-card fade-in fade-in-delay-2">
+        <span class="cert-icon">🎓</span>
+        <div class="cert-title">BS Customs Administration</div>
+        <div class="cert-org">Lyceum of the Philippines University – Batangas</div>
+        <span class="cert-year">2012</span>
+      </div>
+    </div>
+
+    <div style="margin-top:1.5rem;padding:1.5rem 2rem;background:var(--white);border-radius:12px;border:1px solid rgba(29,95,138,0.12);border-left:4px solid var(--gold);" class="fade-in">
+      <strong style="color:var(--navy);font-size:0.95rem;">Diploma Course in Customs Administration and Logistics Management</strong>
+      <span style="display:block;font-size:0.85rem;color:var(--text-light);margin-top:0.3rem;">2012 — Foundational expertise in customs law, logistics management, and international trade regulations</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label" style="justify-content:center;">Get In Touch</div>
+  <h2 class="section-title" style="color:var(--white);">Ready to Move the<br><em style="color:var(--gold)">World's Goods — Together.</em></h2>
+  <p class="contact-sub">Open to full-time, contract, and consulting opportunities in global logistics, customs compliance, and supply chain operations.</p>
+
+  <div class="contact-cards">
+    <div class="contact-card">
+      <span class="contact-card-icon">✉️</span>
+      <span class="contact-card-label">Email</span>
+      <span class="contact-card-value">junesamaeleones@gmail.com</span>
+    </div>
+    <div class="contact-card">
+      <span class="contact-card-icon">📍</span>
+      <span class="contact-card-label">Location</span>
+      <span class="contact-card-value">Philippines</span>
+    </div>
+    <div class="contact-card">
+      <span class="contact-card-icon">🌐</span>
+      <span class="contact-card-label">Work Mode</span>
+      <span class="contact-card-value">Remote</span>
+    </div>
+  </div>
+
+  <div class="availability">Immediately Available for New Opportunities</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Portfolio of <span>Junesa Mae Leones</span> — Licensed Customs Broker &amp; Global Logistics Specialist</p>
+  <p style="margin-top:0.4rem;">junesamaeleones@gmail.com</p>
+</footer>
+
+<script>
+  // Intersection Observer for scroll animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in, .exp-item').forEach(el => observer.observe(el));
+
+  // Counter animation
+  function animateCounter(el) {
+    const target = parseInt(el.dataset.target);
+    const duration = 1800;
+    const step = target / (duration / 16);
+    let current = 0;
+    const timer = setInterval(() => {
+      current += step;
+      if (current >= target) {
+        current = target;
+        clearInterval(timer);
+      }
+      el.textContent = Math.floor(current);
+    }, 16);
+  }
+
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.count-up').forEach(animateCounter);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.hero-stats').forEach(el => counterObserver.observe(el));
+
+  // Active nav highlighting
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      if (window.scrollY >= section.offsetTop - 100) {
+        current = section.getAttribute('id');
+      }
+    });
+    navLinks.forEach(link => {
+      link.style.color = link.getAttribute('href') === '#' + current ? 'var(--gold)' : '';
+    });
+  });
+</script>
+
+</body>
+</html>
